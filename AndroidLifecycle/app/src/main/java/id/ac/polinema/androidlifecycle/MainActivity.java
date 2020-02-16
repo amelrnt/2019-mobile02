@@ -3,6 +3,7 @@ package id.ac.polinema.androidlifecycle;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,6 +14,11 @@ public class MainActivity extends AppCompatActivity {
 	}
 
 	// TODO: tambahkan callback onStart() di sini
+	@Override
+	protected void onStart() {
+		super.onStart();
+		Toast.makeText(this,"App on start",Toast.LENGTH_SHORT).show();
+	}
 
 
 	// TODO: tambahkan callback onStop() di sini
